@@ -1,0 +1,63 @@
+{
+  "layout": [
+    {
+      "width": 8,
+      "components": [
+        {
+          "type": "Hero",
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= global_feed %>"
+          },
+          "properties": {
+            "items": 5,
+            "border": "no-border"
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "List",
+          "properties": {
+            "items": 1,
+            "has_images": true
+          },
+          "header": {
+            "title": ""
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(duration: ONE_HOUR, end_time_offset: TWO_DAYS) %>"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "List",
+          "header": {
+            "title": "In Case You Missed It"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(duration: ONE_DAY, end_time_offset: TWO_DAYS + ONE_HOUR) %>"
+          },
+          "properties": {
+            "items": 3,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          }
+        }
+      ]
+    }
+  ]
+}

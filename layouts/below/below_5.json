@@ -1,0 +1,83 @@
+{
+  "layout": [
+    {
+      "width": 12,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Health & Fitness"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Health & Fitness'], duration: THREE_DAYS, end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 6,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 12,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Tech"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Technology'], duration: THREE_DAYS, end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 6,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          }
+        }
+      ]
+    },
+    {
+      "width": 12,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Science"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Science'], duration: THREE_DAYS, end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 6,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 5
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

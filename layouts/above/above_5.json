@@ -1,0 +1,30 @@
+{
+  "layout": [
+    {
+      "width": 12,
+      "components": [
+        {
+          "type": "CardGrid",
+          "properties": {
+            "items": 3
+          },
+          "header": {
+            "title": ""
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= global_feed %>"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

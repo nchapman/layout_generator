@@ -1,0 +1,76 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'fileutils'
+require 'erb'
+
+ONE_HOUR = 60 * 60
+ONE_DAY = 24 * ONE_HOUR
+TWO_DAYS = 2 * ONE_DAY
+THREE_DAYS = 3 * ONE_DAY
+FIVE_DAYS = 5 * ONE_DAY
+SEVEN_DAYS = 7 * ONE_DAY
+
+TOPICS = {
+  'Business' => 1,
+  'Personal Finance' => 2,
+  'Self Improvement' => 3,
+  'Health & Fitness' => 4,
+  'Technology' => 5,
+  'Sports' => 6,
+  'Science' => 7,
+  'Entertainment' => 8,
+  'Career' => 9,
+  'Education' => 10,
+  'Parenting' => 11,
+  'Gaming' => 12,
+  'Travel' => 13,
+  'Food' => 14,
+  'Politics' => 15
+}
+
+def load_json(path)
+  JSON.parse(ERB.new(File.read(path)).result(binding))
+end
+
+def get_combo_name(p1, p2, ext = '.json')
+  "#{File.basename(p1, ext)}_#{File.basename(p2, ext)}#{ext}"
+end
+
+def clean_output
+  FileUtils.rm(Dir.glob('output/*.json'))
+end
+
+def global_feed
+  "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=40249-e88c401e1b1f2242d9e441c4&locale_lang=en-US"
+  #"file:///Users/nchapman/Desktop/global-recs.json"
+end
+
+def topic_feed(params = {})
+  query = "#{URI.encode_www_form(params)}"
+  "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?#{query}&version=3&consumer_key=40249-e88c401e1b1f2242d9e441c4&locale_lang=en-US&feed_variant=OptimalCuratedLinksForLocaleFeed&model_id=bayesian-0085-15k-locales-rr"
+  #"file:///Users/nchapman/Desktop/global-recs.json"
+end
+
+def spocs_feed
+  "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=40249-e88c401e1b1f2242d9e441c4&locale_lang=en-US&feed_variant=default_spocs_on"
+  #"file:///Users/nchapman/Desktop/global-recs.json"
+end
+
+template = load_json('layouts/template.json')
+divider = load_json('layouts/divider.json')
+
+clean_output
+
+Dir.glob('layouts/above/*.json').each do |p1|
+  above = load_json(p1)
+
+  Dir.glob('layouts/below/*.json').each do |p2|
+    combined = template.clone
+    below = load_json(p2)
+
+    combined['layout'] += above['layout'] + divider['layout'] + below['layout']
+
+    File.write("output/#{get_combo_name(p1, p2)}", JSON.pretty_generate(combined))
+  end
+end

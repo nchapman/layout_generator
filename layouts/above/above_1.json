@@ -1,0 +1,33 @@
+{
+  "layout": [
+    {
+      "width": 12,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": ""
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= global_feed %>"
+          },
+          "properties": {
+            "items": 12,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

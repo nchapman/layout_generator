@@ -1,0 +1,52 @@
+{
+  "layout": [
+    {
+      "width": 8,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": ""
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= global_feed %>"
+          },
+          "properties": {
+            "items": 8,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "CardGrid",
+          "properties": {
+            "items": 1,
+            "border": "no-border"
+          },
+          "header": {
+            "title": ""
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(duration: ONE_HOUR, end_time_offset: TWO_DAYS) %>"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "layout": [
+    {
+      "width": 12,
+      "components": [
+        {
+          "type": "CardGrid",
+          "header": {
+            "title": "In Case You Missed It"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(duration: THREE_DAYS, end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 16,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 3
+              },
+              {
+                "index": 8
+              },
+              {
+                "index": 15
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
