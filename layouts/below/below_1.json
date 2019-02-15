@@ -46,14 +46,6 @@
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 5
-              }
-            ]
           }
         }
       ]
@@ -80,7 +72,7 @@
             "probability": 1,
             "positions": [
               {
-                "index": 9
+                "index": 4
               }
             ]
           }
@@ -104,14 +96,6 @@
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 9
-              }
-            ]
           }
         }
       ]
@@ -133,14 +117,6 @@
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 9
-              }
-            ]
           }
         }
       ]
@@ -167,7 +143,7 @@
             "probability": 1,
             "positions": [
               {
-                "index": 9
+                "index": 4
               }
             ]
           }

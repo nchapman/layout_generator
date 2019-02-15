@@ -96,14 +96,6 @@
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 3
-              }
-            ]
           }
         }
       ]
@@ -125,14 +117,6 @@
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 3
-              }
-            ]
           }
         }
       ]

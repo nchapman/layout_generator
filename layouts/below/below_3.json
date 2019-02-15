@@ -159,14 +159,6 @@
           },
           "styles": {
             ".ds-header": "visibility: hidden"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 5
-              }
-            ]
           }
         }
       ]
@@ -216,14 +208,6 @@
           },
           "styles": {
             ".ds-header": "visibility: hidden"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 5
-              }
-            ]
           }
         }
       ]
@@ -273,14 +257,6 @@
           },
           "styles": {
             ".ds-header": "visibility: hidden"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 5
-              }
-            ]
           }
         }
       ]

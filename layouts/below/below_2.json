@@ -56,14 +56,6 @@
             ".meta": "height: 136px; position: relative;",
             ".meta p:not(.source)": "display: none",
             ".meta p.source": "position: absolute; bottom: 0;"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 5
-              }
-            ]
           }
         }
       ]
@@ -95,7 +87,7 @@
             "probability": 1,
             "positions": [
               {
-                "index": 9
+                "index": 4
               }
             ]
           }
@@ -124,14 +116,6 @@
             ".meta": "height: 136px; position: relative;",
             ".meta p:not(.source)": "display: none",
             ".meta p.source": "position: absolute; bottom: 0;"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 9
-              }
-            ]
           }
         }
       ]
@@ -158,14 +142,6 @@
             ".meta": "height: 136px; position: relative;",
             ".meta p:not(.source)": "display: none",
             ".meta p.source": "position: absolute; bottom: 0;"
-          },
-          "spocs": {
-            "probability": 1,
-            "positions": [
-              {
-                "index": 9
-              }
-            ]
           }
         }
       ]
@@ -197,7 +173,7 @@
             "probability": 1,
             "positions": [
               {
-                "index": 9
+                "index": 4
               }
             ]
           }
