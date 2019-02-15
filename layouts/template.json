@@ -23,10 +23,10 @@
           "type": "Message",
           "header": {
             "title": "Recommended by Pocket",
-            "subtitle": "Handpicked stories worth your time.",
-            "link_text": "Learn more.",
+            "subtitle": "",
+            "link_text": "How it works",
             "link_url": "https://getpocket.com/firefox/new_tab_learn_more",
-            "icon": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.amazonaws.com%2Fpocket-general-images%2Frecs%2Fpocket-2x.png"
+            "icon": "resource://activity-stream/data/content/assets/glyph-pocket-16.svg"
           },
           "properties": {},
           "styles": {

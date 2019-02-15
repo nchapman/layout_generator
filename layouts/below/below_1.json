@@ -6,7 +6,7 @@
         {
           "type": "List",
           "header": {
-            "title": "Health & Fitness"
+            "title": "Health & Fitness 💪"
           },
           "feed": {
             "embed_reference": null,
@@ -35,7 +35,7 @@
         {
           "type": "List",
           "header": {
-            "title": "Tech"
+            "title": "Tech 🖥"
           },
           "feed": {
             "embed_reference": null,
@@ -64,7 +64,7 @@
         {
           "type": "List",
           "header": {
-            "title": "Entertainment"
+            "title": "Entertainment 🍿"
           },
           "feed": {
             "embed_reference": null,
@@ -93,7 +93,7 @@
         {
           "type": "List",
           "header": {
-            "title": "Personal Finance"
+            "title": "Personal Finance 💰"
           },
           "feed": {
             "embed_reference": null,
@@ -122,7 +122,7 @@
         {
           "type": "List",
           "header": {
-            "title": "Business"
+            "title": "Business 💼"
           },
           "feed": {
             "embed_reference": null,
@@ -151,7 +151,7 @@
         {
           "type": "List",
           "header": {
-            "title": "Science"
+            "title": "Science 🔬"
           },
           "feed": {
             "embed_reference": null,
