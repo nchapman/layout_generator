@@ -13,10 +13,6 @@
             "items": 5,
             "border": "no-border"
           },
-          "styles": {
-            ".ds-hero > .wrapper > .img-wrapper": "width: 48%",
-            ".ds-hero > .wrapper > .meta": "width: 52%"
-          },
           "spocs": {
             "probability": 1,
             "positions": [

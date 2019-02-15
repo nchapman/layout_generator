@@ -26,14 +26,15 @@
         {
           "type": "CardGrid",
           "properties": {
-            "items": 1
+            "items": 1,
+            "offset": 8
           },
           "header": {
             "title": ""
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(duration: ONE_HOUR, end_time_offset: TWO_DAYS) %>"
+            "url": "<%= global_feed %>"
           },
           "spocs": {
             "probability": 1,
@@ -51,10 +52,11 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(duration: ONE_DAY, end_time_offset: TWO_DAYS + ONE_HOUR) %>"
+            "url": "<%= global_feed %>"
           },
           "properties": {
             "items": 2,
+            "offset": 9,
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"

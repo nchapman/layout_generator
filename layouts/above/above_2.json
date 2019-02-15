@@ -28,14 +28,15 @@
           "type": "CardGrid",
           "properties": {
             "items": 1,
-            "border": "no-border"
+            "border": "no-border",
+            "offset": 8
           },
           "header": {
             "title": ""
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(duration: ONE_HOUR, end_time_offset: TWO_DAYS) %>"
+            "url": "<%= global_feed %>"
           },
           "spocs": {
             "probability": 1,

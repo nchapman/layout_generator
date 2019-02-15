@@ -6,11 +6,11 @@
         {
           "type": "CardGrid",
           "header": {
-            "title": "Heath & Fitness"
+            "title": "Health & Fitness"
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Health & Fitness'], duration: ONE_DAY, end_time_offset: TWO_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Health & Fitness'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
             "items": 1,
@@ -34,10 +34,11 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Health & Fitness'], duration: THREE_DAYS, end_time_offset: THREE_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Health & Fitness'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
             "items": 6,
+            "offset": 1,
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
@@ -66,7 +67,7 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Technology'], duration: ONE_DAY, end_time_offset: TWO_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Technology'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
             "items": 1,
@@ -90,10 +91,182 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Technology'], duration: THREE_DAYS, end_time_offset: THREE_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Technology'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
             "items": 6,
+            "offset": 1,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "styles": {
+            ".ds-header": "visibility: hidden"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "CardGrid",
+          "header": {
+            "title": "Entertainment"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Entertainment'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 1,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "styles": {
+            ".excerpt": "display: none"
+          }
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Entertainment"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Entertainment'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 6,
+            "offset": 1,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "styles": {
+            ".ds-header": "visibility: hidden"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "CardGrid",
+          "header": {
+            "title": "Personal Finance"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Personal Finance'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 1,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "styles": {
+            ".excerpt": "display: none"
+          }
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Personal Finance"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Personal Finance'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 6,
+            "offset": 1,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "styles": {
+            ".ds-header": "visibility: hidden"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "CardGrid",
+          "header": {
+            "title": "Business"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Business'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 1,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "styles": {
+            ".excerpt": "display: none"
+          }
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Business"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Business'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 6,
+            "offset": 1,
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
@@ -122,7 +295,7 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Science'], duration: ONE_DAY, end_time_offset: TWO_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Science'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
             "items": 1,
@@ -146,10 +319,11 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Science'], duration: THREE_DAYS, end_time_offset: THREE_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Science'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
             "items": 6,
+            "offset": 1,
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"

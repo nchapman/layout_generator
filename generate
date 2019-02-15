@@ -48,7 +48,7 @@ end
 
 def topic_feed(params = {})
   query = "#{URI.encode_www_form(params)}"
-  "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?#{query}&version=3&consumer_key=40249-e88c401e1b1f2242d9e441c4&locale_lang=en-US&feed_variant=OptimalCuratedLinksForLocaleFeed&model_id=bayesian-0085-15k-locales-rr"
+  "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?#{query}&version=3&consumer_key=40249-e88c401e1b1f2242d9e441c4&locale_lang=en-US&feed_variant=OptimalCuratedLinksForLocaleFeed&model_id=external_time_live"
   #"file:///Users/nchapman/Desktop/global-recs.json"
 end
 

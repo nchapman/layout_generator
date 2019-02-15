@@ -10,10 +10,10 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Health & Fitness'], duration: THREE_DAYS, end_time_offset: FIVE_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Health & Fitness'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
-            "items": 10,
+            "items": 5,
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
@@ -39,10 +39,10 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Technology'], duration: THREE_DAYS, end_time_offset: FIVE_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Technology'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
-            "items": 10,
+            "items": 5,
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"
@@ -64,14 +64,101 @@
         {
           "type": "List",
           "header": {
+            "title": "Entertainment"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Entertainment'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 5,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 9
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Personal Finance"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Personal Finance'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 5,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 9
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "List",
+          "header": {
+            "title": "Business"
+          },
+          "feed": {
+            "embed_reference": null,
+            "url": "<%= topic_feed(topic_id: TOPICS['Business'], end_time_offset: TWO_DAYS) %>"
+          },
+          "properties": {
+            "items": 5,
+            "has_numbers": false,
+            "has_images": true,
+            "border": "no-border"
+          },
+          "spocs": {
+            "probability": 1,
+            "positions": [
+              {
+                "index": 9
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 4,
+      "components": [
+        {
+          "type": "List",
+          "header": {
             "title": "Science"
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(topic_id: TOPICS['Science'], duration: THREE_DAYS, end_time_offset: FIVE_DAYS) %>"
+            "url": "<%= topic_feed(topic_id: TOPICS['Science'], end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
-            "items": 10,
+            "items": 5,
             "has_numbers": false,
             "has_images": true,
             "border": "no-border"

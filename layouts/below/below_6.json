@@ -10,7 +10,7 @@
           },
           "feed": {
             "embed_reference": null,
-            "url": "<%= topic_feed(duration: THREE_DAYS, end_time_offset: TWO_DAYS) %>"
+            "url": "<%= topic_feed(end_time_offset: TWO_DAYS) %>"
           },
           "properties": {
             "items": 16,

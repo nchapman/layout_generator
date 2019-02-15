@@ -1,13 +1,5 @@
 {
   "layout": [
-    {
-      "width": 12,
-      "components": [
-        {
-          "type": "HorizontalRule",
-          "properties": {}
-        }
-      ]
-    }
+
   ]
 }
