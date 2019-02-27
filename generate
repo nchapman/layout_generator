@@ -29,6 +29,8 @@ TOPICS = {
   'Politics' => 15
 }
 
+EXCLUDE_LAYOUTS = /(above_[145])|(below_[63])/
+
 def load_json(path)
   JSON.parse(ERB.new(File.read(path)).result(binding))
 end
@@ -63,9 +65,13 @@ divider = load_json('layouts/divider.json')
 clean_output
 
 Dir.glob('layouts/above/*.json').each do |p1|
+  next if p1 =~ EXCLUDE_LAYOUTS
+
   above = load_json(p1)
 
   Dir.glob('layouts/below/*.json').each do |p2|
+    next if p2 =~ EXCLUDE_LAYOUTS
+
     combined = template.clone
     below = load_json(p2)
 
